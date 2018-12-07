@@ -57,5 +57,9 @@ app.get('/about', (request, response) => {
 });
 
 
+app.get('/projects', (request, response) => {
+    response.render('projects.hbs');
+});
+
 
 app.listen(PORT, () => console.log(`Server started successfully. Listening on port ${PORT}`));
