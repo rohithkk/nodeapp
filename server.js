@@ -41,7 +41,7 @@ app.get('/', (request, response) => {
 
 app.get('/hello', (request, response) => {
     //response.send("hello express!");
-    response.send({name:'Rohith', birthDate:'08/14/1986'});
+    response.send({name:'Rohith', birthDate:'01/01/1980'});
 });
 
 app.get('/error', (request, response) => {
@@ -50,8 +50,8 @@ app.get('/error', (request, response) => {
 
 app.get('/about', (request, response) => {
     response.render('about.hbs', {
-        'name':"Rohith Kodakandla",
-        'dob':"09/03/1987",
+        'name':"Rohith",
+        'dob':"01/01/1980",
         'copyRight':"2019"
     });
 });
